@@ -54,9 +54,9 @@ public class StepperHandler implements DeviceHandler {
 
 	public void startMotor(boolean forward, int steps, int speed) throws Exception {
 
+
 		int selectedSpeed = Math.abs(speed) > Math.abs(maxSpeed) ? Math.abs(maxSpeed) : Math.abs(speed);
 		int selectedSteps = Math.abs(steps) > 0 ? Math.abs(steps) : 0;
-
 		connectBrick();
 
 		stepper.addPositionReachedListener(new BrickStepper.PositionReachedListener() {

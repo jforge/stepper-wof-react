@@ -4,6 +4,8 @@ Stepper Motor driven Wheel of Fortune React.js App
 ## WoF Stepper App
 React.js App for controlling the stepper motor (directly or decoupled using MQTT)
 
+
+
 ## Tinkerforge-mqtt-router
 MQTT subscriber and publisher as content-based router and
 message translator to create mqtt-brick-proxy compatible 
