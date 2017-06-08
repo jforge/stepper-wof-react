@@ -5,7 +5,6 @@ Stepper Motor driven Wheel of Fortune React.js App
 React.js App for controlling the stepper motor (directly or decoupled using MQTT)
 
 
-
 ## Tinkerforge-mqtt-router
 MQTT subscriber and publisher as content-based router and
 message translator to create mqtt-brick-proxy compatible 
@@ -31,6 +30,8 @@ For this infrastructure is up, running and secure, the Alexa skill is just a Voi
   - successful node/react integration with the Eclipse Paho mqtt JavaScript library
 
 - Results:
-  - always decouple hardware from web apps using asynchronous approaches (KISS: use mqtt with paho)
-  - ... tbd.
-
+  - always decouple hardware from web apps, e.g. using asynchronous approaches (KISS: use mqtt with paho)
+  - always use status checks when using hardware
+  - use telnet in order not to making senseless guessings about reachable ports
+  - ...
+   
