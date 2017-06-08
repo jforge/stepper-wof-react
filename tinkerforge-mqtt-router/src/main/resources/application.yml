@@ -1,0 +1,41 @@
+debug: true
+
+brickdaemon:
+  host: localhost
+  port: 4223
+
+update_interval_seconds: 3
+enumeration_interval_seconds: 15
+quiesce_timeout_seconds: 2
+
+mqtt:
+  clientId: TinkerForge_Mqtt_Router
+  broker:
+    uri: tcp://things.online:1883
+    username: public
+    password: 0xp4yr
+  topic_prefix:
+    amazon_echo: echo/
+    tinkerforge: tinkerforge/
+
+tinkerforge:
+  actuator:
+    stepper:
+      uid: 62Ydqh
+      max_speed: 1000
+    segment_display_4x7:
+      first:
+        uid: pVw
+        brightness: 7
+      second:
+        uid: kTQ
+        brightness: 7
+    lcd_20x4:
+      uid: o6J
+    dual_button:
+      uid: mza
+  sensor:
+    imu:
+      uid: 6DdNWN
+    load_cell:
+      uid: uzS
