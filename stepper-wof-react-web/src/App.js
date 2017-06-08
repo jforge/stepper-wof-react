@@ -61,13 +61,10 @@ var Tinkerforge = require('tinkerforge');
 			// Use position reached callback to program random movement
 			function (position) {
 		        console.log("Position reached. Disconnect device. " + position);
+		}
+    	);
 
-				shutdown(stepper,ipcon);
-
-			}
-		);
-
-		shutdown(stepper,ipcon);
+    	//	shutdown(stepper,ipcon);
 
 	}
 
