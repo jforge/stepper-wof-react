@@ -3,7 +3,7 @@
 Module to route and translate simplified incoming control messages 
 e.g. from an AWS Lambda service to messages for Tinkerforge Hardware.
 
-Such hardware can controlled directly (e.g. stepper motor) or by
+Such hardware can be controlled directly (e.g. stepper motor) or by
 using a Tinkerforge Brick MQTT Proxy that expects a specific json 
 payload format and a certain MQTT topic structure.
 
